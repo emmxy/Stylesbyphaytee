@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles by phaytee</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Styles by phaytee</div>
+        <nav>
+            <a href="Womenware.html
+            ">WOMENSWEAR</a>
+            <a href="Mensware.html">MENSWEAR</a>
+            <a href="Kids.html">KIDS</a>
+            <a href="Discover.html">DISCOVER</a>
+        </nav>
+        <div class="search-and-icons">
+            <input type="text" placeholder="Search">
+            <div class="icons">
+                <span>&#9825;</span>
+                <span>&#128722;</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-banner">
+            <div class="main-text">
+                <h1>FOR EVERYONE BUT NOT ANYONE</h1>
+                <p>We establish personal relationships with our boutiques, to make sure each is vetted for a stress-free shopping experience</p>
+            </div>
+            <div class="main-image">
+                <img src="Calm/Green sewater.jpg" alt="Main Image">
+              <a href="Womenware.html" class="shop-now" id="shop-now">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="sub-images">
+            <div class="sub-image">
+                <img src="Calm/WhatsApp Image 2024-07-09 at 01.54.52_99b2cb46.jpg" alt="Rip Stop">
+                <div class="caption">#RIPSTOP</div>
+            </div>
+            <div class="sub-image">
+                <img src="Calm/sleeveless.jpg" alt="Insulated">
+                <div class="caption">#INSULATED</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/stylebyphaytee?igsh=ZzcxajBkaDcwejZp" id="learn-more">LEARN MORE</a>
+        <a href="https://api.whatsapp.com/send?phone=23408037909208&text=Hello!%0AI'm%20interested%20in%20your%20products" id="contact-us">CONTACT US</a>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const shopNowButton = document.getElementById('shop-now');
+        const learnMoreLink = document.getElementById('learn-more');
+        const contactUsLink = document.getElementById('contact-us');
+    
+        const handleLinkClick = (event, url) => {
+            event.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Match this to the transition duration in the CSS
+        };
+    
+        shopNowButton.addEventListener('click', function(event) {
+            handleLinkClick(event, 'Womenware.html');
+        });
+    
+        learnMoreLink.addEventListener('click', function(event) {
+            handleLinkClick(event, 'https://www.instagram.com/stylebyphaytee?igsh=ZzcxajBkaDcwejZp'); // Replace '#' with the actual URL
+        });
+    
+        contactUsLink.addEventListener('click', function(event) {
+            handleLinkClick(event, "https://api.whatsapp.com/send?phone=23408037909208&text=Hello!%0AI'm%20interested%20in%20your%20products"); // Replace '#' with the actual URL
+        });
+    });
+    </script>
+</body>
+</html>

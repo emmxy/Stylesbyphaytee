@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+}
+
+.sort-button, .category-button {
+    background-color: #d4ff00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.cart-button {
+    width: 30px;
+    height: 30px;
+    background-image: url('cart-icon.png');
+    background-size: cover;
+    border: none;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.product-card {
+    background-color: #2c2c2e;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-info {
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.product-info h2 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #d4ff00;
+}
+
+.wishlist-button {
+    width: 20px;
+    height: 20px;
+    background-image: url('wishlist-icon.png');
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.buy-now-button {
+    background-color: #4dff00; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buy-now-button:hover {
+    background-color: #45a049;
+}
+.previous-button {
+    background-color: #d4ff00; /* Dark Gray */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.previous-button:hover {
+    background-color: #444; /* Darker Gray */
+}

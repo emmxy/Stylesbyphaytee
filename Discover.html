@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="Mensware.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="index.html" class="previous-button">Previous</a>
+            </div>
+            <div class="header-left">
+                <button class="sort-button">Sort by</button>
+                <button class="category-button">Shoes</button>
+                <button class="category-button">FW 2021</button>
+            </div>
+        </header>
+        <main>
+            <h1>Discover!</h1>
+            <h2>tap to preview the pictures you like!</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Calm/images/Discover/Discover.jpg" alt="Green Skeleton" onclick="openPreview(this)">
+                    <div class="product-info">
+                       
+                    </div>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="Calm/images/Discover/Discover1.jpg" alt="Blue Hoodie" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                   
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/discover2.jpg" alt="Black Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/discover3.jpg" alt="Pink Flames Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/discover4.jpg" alt="Shark Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/discover6.jpg" alt="Shark Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/Discover7.jpg" alt="Shark Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/Discover/discover5.jpg" alt="Blue Silk" onclick="openPreview(this)">
+                    <div class="product-info">
+
+                        
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="modal">
+        <span class="close" onclick="closePreview()">&times;</span>
+        <img class="modal-content" id="preview-image">
+    </div>
+
+    <script>
+        function openPreview(image) {
+            var modal = document.getElementById("preview-modal");
+            var modalImg = document.getElementById("preview-image");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+        }
+
+        function closePreview() {
+            var modal = document.getElementById("preview-modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menswear</title>
+    <link rel="stylesheet" href="Mensware.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="index.html" class="previous-button">Previous</a>
+            </div>
+            <div class="header-left">
+                <button class="sort-button">Sort by</button>
+                <button class="category-button">Shoes</button>
+                <a href="Kids.html" class="previous-button">Next</a>
+            </div>
+        </header>
+        <main>
+            <h1>MENSWEAR</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Calm/images/men/brown.jpg" alt="Green Skeleton" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Green Skeleton</h2>
+                        <p>$2,280</p>
+                    </div>
+                    <a href="green-skeleton.html" class="buy-now-button">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="Calm/images/men/hoodie.jpg" alt="Blue Hoodie" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Blue Hoodie</h2>
+                        <p>$1,890</p>
+                    </div>
+                    <a href="blue-hoodie.html" class="buy-now-button">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/men/b&w.jpg" alt="Black Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Black Sweater</h2>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="black-sweater.html" class="buy-now-button">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/men/pink.jpg" alt="Pink Flames Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Pink Flames Sweater</h2>
+                        <p>$486.00</p>
+                    </div>
+                    <a href="pink-flames.html" class="buy-now-button">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/men/sweater1.jpg" alt="Shark Sweater" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Shark Sweater</h2>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="shark-sweater.html" class="buy-now-button">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Calm/images/men/sweater2.jpg" alt="Blue Silk" onclick="openPreview(this)">
+                    <div class="product-info">
+                        <h2>Blue Silk</h2>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="blue-silk.html" class="buy-now-button">Buy Now</a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="modal">
+        <span class="close" onclick="closePreview()">&times;</span>
+        <img class="modal-content" id="preview-image">
+    </div>
+
+    <script>
+        function openPreview(image) {
+            var modal = document.getElementById("preview-modal");
+            var modalImg = document.getElementById("preview-image");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+        }
+
+        function closePreview() {
+            var modal = document.getElementById("preview-modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
